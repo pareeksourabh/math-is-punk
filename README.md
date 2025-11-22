@@ -23,3 +23,5 @@ The frontend lives in `frontend/`. A root-level helper script installs the depen
 - (Optional) Root directory: repo root (no subdirectory needed)
 
 `next.config.ts` is set to `output: "export"`, so `next build` generates a static export in `frontend/out` that Pages can serve directly. In CI the `prebuild` script runs `npm --prefix frontend ci` to install dependencies before the build.
+
+If you are using a custom deploy command (e.g. `npx wrangler deploy`), `wrangler.toml` in the repo root points Wrangler at the static assets in `frontend/out`, so the deployment step can publish the export.
