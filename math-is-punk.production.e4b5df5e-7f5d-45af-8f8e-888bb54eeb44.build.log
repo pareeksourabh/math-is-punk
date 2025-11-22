@@ -1,0 +1,218 @@
+2025-11-22T06:43:00.168Z	Initializing build environment...
+2025-11-22T06:43:01.546Z	Success: Finished initializing build environment
+2025-11-22T06:43:01.952Z	Cloning repository...
+2025-11-22T06:43:03.002Z	No build output detected to cache. Skipping.
+2025-11-22T06:43:03.002Z	No dependencies detected to cache. Skipping.
+2025-11-22T06:43:03.005Z	Detected the following tools from environment: bun@1.2.15, nodejs@22.16.0
+2025-11-22T06:43:03.129Z	Installing project dependencies: bun install
+2025-11-22T06:43:03.289Z	bun install v1.2.15 (df017990)
+2025-11-22T06:43:03.330Z	Resolving dependencies
+2025-11-22T06:43:07.334Z	Resolved, downloaded and extracted [352]
+2025-11-22T06:43:07.991Z	Saved lockfile
+2025-11-22T06:43:07.991Z	
+2025-11-22T06:43:07.991Z	59 packages installed [4.74s]
+2025-11-22T06:43:08.169Z	Executing user build command: npm run build
+2025-11-22T06:43:08.515Z	
+2025-11-22T06:43:08.515Z	> prebuild
+2025-11-22T06:43:08.515Z	> npm --prefix frontend ci
+2025-11-22T06:43:08.515Z	
+2025-11-22T06:43:44.404Z	
+2025-11-22T06:43:44.404Z	added 59 packages, and audited 60 packages in 36s
+2025-11-22T06:43:44.405Z	
+2025-11-22T06:43:44.405Z	15 packages are looking for funding
+2025-11-22T06:43:44.405Z	  run `npm fund` for details
+2025-11-22T06:43:44.405Z	
+2025-11-22T06:43:44.406Z	found 0 vulnerabilities
+2025-11-22T06:43:44.539Z	
+2025-11-22T06:43:44.540Z	> build
+2025-11-22T06:43:44.540Z	> npm --prefix frontend run build
+2025-11-22T06:43:44.545Z	
+2025-11-22T06:43:44.689Z	
+2025-11-22T06:43:44.690Z	> frontend@0.1.0 build
+2025-11-22T06:43:44.690Z	> next build
+2025-11-22T06:43:44.690Z	
+2025-11-22T06:43:45.463Z	 ⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
+2025-11-22T06:43:45.463Z	 We detected multiple lockfiles and selected the directory of /opt/buildhome/repo/bun.lock as the root directory.
+2025-11-22T06:43:45.463Z	 To silence this warning, set `turbopack.root` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+2025-11-22T06:43:45.463Z	   See https://nextjs.org/docs/app/api-reference/config/next-config-js/turbopack#root-directory for more information.
+2025-11-22T06:43:45.463Z	 Detected additional lockfiles: 
+2025-11-22T06:43:45.463Z	   * /opt/buildhome/repo/frontend/package-lock.json
+2025-11-22T06:43:45.464Z	
+2025-11-22T06:43:45.465Z	⚠ No build cache found. Please configure build caching for faster rebuilds. Read more: https://nextjs.org/docs/messages/no-cache
+2025-11-22T06:43:45.469Z	Attention: Next.js now collects completely anonymous telemetry regarding usage.
+2025-11-22T06:43:45.469Z	This information is used to shape Next.js' roadmap and prioritize features.
+2025-11-22T06:43:45.469Z	You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+2025-11-22T06:43:45.469Z	https://nextjs.org/telemetry
+2025-11-22T06:43:45.469Z	
+2025-11-22T06:43:45.479Z	   ▲ Next.js 16.0.3 (Turbopack)
+2025-11-22T06:43:45.479Z	
+2025-11-22T06:43:45.535Z	   Creating an optimized production build ...
+2025-11-22T06:44:06.036Z	 ✓ Compiled successfully in 20.0s
+2025-11-22T06:44:06.048Z	   Running TypeScript ...
+2025-11-22T06:44:08.260Z	   Collecting page data using 1 worker ...
+2025-11-22T06:44:08.565Z	   Generating static pages using 1 worker (0/4) ...
+2025-11-22T06:44:08.948Z	   Generating static pages using 1 worker (1/4) 
+2025-11-22T06:44:08.950Z	   Generating static pages using 1 worker (2/4) 
+2025-11-22T06:44:08.950Z	   Generating static pages using 1 worker (3/4) 
+2025-11-22T06:44:08.951Z	 ✓ Generating static pages using 1 worker (4/4) in 385.0ms
+2025-11-22T06:44:08.962Z	   Finalizing page optimization ...
+2025-11-22T06:44:09.072Z	
+2025-11-22T06:44:09.073Z	Route (app)
+2025-11-22T06:44:09.073Z	┌ ○ /
+2025-11-22T06:44:09.073Z	└ ○ /_not-found
+2025-11-22T06:44:09.073Z	
+2025-11-22T06:44:09.074Z	
+2025-11-22T06:44:09.075Z	○  (Static)  prerendered as static content
+2025-11-22T06:44:09.075Z	
+2025-11-22T06:44:09.132Z	Success: Build command completed
+2025-11-22T06:44:09.256Z	Executing user deploy command: npx wrangler deploy
+2025-11-22T06:44:10.192Z	npm warn exec The following package was not found and will be installed: wrangler@4.50.0
+2025-11-22T06:44:23.406Z	
+2025-11-22T06:44:23.406Z	 ⛅️ wrangler 4.50.0
+2025-11-22T06:44:23.406Z	───────────────────
+2025-11-22T06:44:23.423Z	
+2025-11-22T06:44:23.493Z	✘ [ERROR] Missing entry-point to Worker script or to assets directory
+2025-11-22T06:44:23.494Z	
+2025-11-22T06:44:23.494Z	  
+2025-11-22T06:44:23.495Z	  If there is code to deploy, you can either:
+2025-11-22T06:44:23.496Z	  - Specify an entry-point to your Worker script via the command line (ex: `npx wrangler deploy src/index.ts`)
+2025-11-22T06:44:23.496Z	  - Or create a "wrangler.jsonc" file containing:
+2025-11-22T06:44:23.497Z	  
+2025-11-22T06:44:23.497Z	  ```
+2025-11-22T06:44:23.497Z	  {
+2025-11-22T06:44:23.497Z	    "name": "worker-name",
+2025-11-22T06:44:23.497Z	    "compatibility_date": "2025-11-22",
+2025-11-22T06:44:23.497Z	    "main": "src/index.ts"
+2025-11-22T06:44:23.497Z	  }
+2025-11-22T06:44:23.497Z	  ```
+2025-11-22T06:44:23.497Z	  
+2025-11-22T06:44:23.497Z	  
+2025-11-22T06:44:23.498Z	  If are uploading a directory of assets, you can either:
+2025-11-22T06:44:23.498Z	  - Specify the path to the directory of assets via the command line: (ex: `npx wrangler deploy --assets=./dist`)
+2025-11-22T06:44:23.498Z	  - Or create a "wrangler.jsonc" file containing:
+2025-11-22T06:44:23.498Z	  
+2025-11-22T06:44:23.499Z	  ```
+2025-11-22T06:44:23.500Z	  {
+2025-11-22T06:44:23.500Z	    "name": "worker-name",
+2025-11-22T06:44:23.500Z	    "compatibility_date": "2025-11-22",
+2025-11-22T06:44:23.500Z	    "assets": {
+2025-11-22T06:44:23.500Z	      "directory": "./dist"
+2025-11-22T06:44:23.500Z	    }
+2025-11-22T06:44:23.500Z	  }
+2025-11-22T06:44:23.500Z	  ```
+2025-11-22T06:44:23.501Z	  
+2025-11-22T06:44:23.501Z	
+2025-11-22T06:44:23.501Z	
+2025-11-22T06:44:23.515Z	
+2025-11-22T06:44:23.515Z	Cloudflare collects anonymous telemetry about your usage of Wrangler. Learn more at https://github.com/cloudflare/workers-sdk/tree/main/packages/wrangler/telemetry.md
+2025-11-22T06:44:23.529Z	🪵  Logs were written to "/opt/buildhome/.config/.wrangler/logs/wrangler-2025-11-22_06-44-22_680.log"
+2025-11-22T06:44:23.660Z	Failed: error occurred while running deploy command
+2025-11-22T06:43:00.168Z	Initializing build environment...
+2025-11-22T06:43:01.546Z	Success: Finished initializing build environment
+2025-11-22T06:43:01.952Z	Cloning repository...
+2025-11-22T06:43:03.002Z	No build output detected to cache. Skipping.
+2025-11-22T06:43:03.002Z	No dependencies detected to cache. Skipping.
+2025-11-22T06:43:03.005Z	Detected the following tools from environment: bun@1.2.15, nodejs@22.16.0
+2025-11-22T06:43:03.129Z	Installing project dependencies: bun install
+2025-11-22T06:43:03.289Z	bun install v1.2.15 (df017990)
+2025-11-22T06:43:03.330Z	Resolving dependencies
+2025-11-22T06:43:07.334Z	Resolved, downloaded and extracted [352]
+2025-11-22T06:43:07.991Z	Saved lockfile
+2025-11-22T06:43:07.991Z	
+2025-11-22T06:43:07.991Z	59 packages installed [4.74s]
+2025-11-22T06:43:08.169Z	Executing user build command: npm run build
+2025-11-22T06:43:08.515Z	
+2025-11-22T06:43:08.515Z	> prebuild
+2025-11-22T06:43:08.515Z	> npm --prefix frontend ci
+2025-11-22T06:43:08.515Z	
+2025-11-22T06:43:44.404Z	
+2025-11-22T06:43:44.404Z	added 59 packages, and audited 60 packages in 36s
+2025-11-22T06:43:44.405Z	
+2025-11-22T06:43:44.405Z	15 packages are looking for funding
+2025-11-22T06:43:44.405Z	  run `npm fund` for details
+2025-11-22T06:43:44.405Z	
+2025-11-22T06:43:44.406Z	found 0 vulnerabilities
+2025-11-22T06:43:44.539Z	
+2025-11-22T06:43:44.540Z	> build
+2025-11-22T06:43:44.540Z	> npm --prefix frontend run build
+2025-11-22T06:43:44.545Z	
+2025-11-22T06:43:44.689Z	
+2025-11-22T06:43:44.690Z	> frontend@0.1.0 build
+2025-11-22T06:43:44.690Z	> next build
+2025-11-22T06:43:44.690Z	
+2025-11-22T06:43:45.463Z	 ⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
+2025-11-22T06:43:45.463Z	 We detected multiple lockfiles and selected the directory of /opt/buildhome/repo/bun.lock as the root directory.
+2025-11-22T06:43:45.463Z	 To silence this warning, set `turbopack.root` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+2025-11-22T06:43:45.463Z	   See https://nextjs.org/docs/app/api-reference/config/next-config-js/turbopack#root-directory for more information.
+2025-11-22T06:43:45.463Z	 Detected additional lockfiles: 
+2025-11-22T06:43:45.463Z	   * /opt/buildhome/repo/frontend/package-lock.json
+2025-11-22T06:43:45.464Z	
+2025-11-22T06:43:45.465Z	⚠ No build cache found. Please configure build caching for faster rebuilds. Read more: https://nextjs.org/docs/messages/no-cache
+2025-11-22T06:43:45.469Z	Attention: Next.js now collects completely anonymous telemetry regarding usage.
+2025-11-22T06:43:45.469Z	This information is used to shape Next.js' roadmap and prioritize features.
+2025-11-22T06:43:45.469Z	You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+2025-11-22T06:43:45.469Z	https://nextjs.org/telemetry
+2025-11-22T06:43:45.469Z	
+2025-11-22T06:43:45.479Z	   ▲ Next.js 16.0.3 (Turbopack)
+2025-11-22T06:43:45.479Z	
+2025-11-22T06:43:45.535Z	   Creating an optimized production build ...
+2025-11-22T06:44:06.036Z	 ✓ Compiled successfully in 20.0s
+2025-11-22T06:44:06.048Z	   Running TypeScript ...
+2025-11-22T06:44:08.260Z	   Collecting page data using 1 worker ...
+2025-11-22T06:44:08.565Z	   Generating static pages using 1 worker (0/4) ...
+2025-11-22T06:44:08.948Z	   Generating static pages using 1 worker (1/4) 
+2025-11-22T06:44:08.950Z	   Generating static pages using 1 worker (2/4) 
+2025-11-22T06:44:08.950Z	   Generating static pages using 1 worker (3/4) 
+2025-11-22T06:44:08.951Z	 ✓ Generating static pages using 1 worker (4/4) in 385.0ms
+2025-11-22T06:44:08.962Z	   Finalizing page optimization ...
+2025-11-22T06:44:09.072Z	
+2025-11-22T06:44:09.073Z	Route (app)
+2025-11-22T06:44:09.073Z	┌ ○ /
+2025-11-22T06:44:09.073Z	└ ○ /_not-found
+2025-11-22T06:44:09.073Z	
+2025-11-22T06:44:09.074Z	
+2025-11-22T06:44:09.075Z	○  (Static)  prerendered as static content
+2025-11-22T06:44:09.075Z	
+2025-11-22T06:44:09.132Z	Success: Build command completed
+2025-11-22T06:44:09.256Z	Executing user deploy command: npx wrangler deploy
+2025-11-22T06:44:10.192Z	npm warn exec The following package was not found and will be installed: wrangler@4.50.0
+2025-11-22T06:44:23.406Z	
+2025-11-22T06:44:23.406Z	 ⛅️ wrangler 4.50.0
+2025-11-22T06:44:23.406Z	───────────────────
+2025-11-22T06:44:23.423Z	
+2025-11-22T06:44:23.493Z	✘ [ERROR] Missing entry-point to Worker script or to assets directory
+2025-11-22T06:44:23.494Z	
+2025-11-22T06:44:23.494Z	  
+2025-11-22T06:44:23.495Z	  If there is code to deploy, you can either:
+2025-11-22T06:44:23.496Z	  - Specify an entry-point to your Worker script via the command line (ex: `npx wrangler deploy src/index.ts`)
+2025-11-22T06:44:23.496Z	  - Or create a "wrangler.jsonc" file containing:
+2025-11-22T06:44:23.497Z	  
+2025-11-22T06:44:23.497Z	  ```
+2025-11-22T06:44:23.497Z	  {
+2025-11-22T06:44:23.497Z	    "name": "worker-name",
+2025-11-22T06:44:23.497Z	    "compatibility_date": "2025-11-22",
+2025-11-22T06:44:23.497Z	    "main": "src/index.ts"
+2025-11-22T06:44:23.497Z	  }
+2025-11-22T06:44:23.497Z	  ```
+2025-11-22T06:44:23.497Z	  
+2025-11-22T06:44:23.497Z	  
+2025-11-22T06:44:23.498Z	  If are uploading a directory of assets, you can either:
+2025-11-22T06:44:23.498Z	  - Specify the path to the directory of assets via the command line: (ex: `npx wrangler deploy --assets=./dist`)
+2025-11-22T06:44:23.498Z	  - Or create a "wrangler.jsonc" file containing:
+2025-11-22T06:44:23.498Z	  
+2025-11-22T06:44:23.499Z	  ```
+2025-11-22T06:44:23.500Z	  {
+2025-11-22T06:44:23.500Z	    "name": "worker-name",
+2025-11-22T06:44:23.500Z	    "compatibility_date": "2025-11-22",
+2025-11-22T06:44:23.500Z	    "assets": {
+2025-11-22T06:44:23.500Z	      "directory": "./dist"
+2025-11-22T06:44:23.500Z	    }
+2025-11-22T06:44:23.500Z	  }
+2025-11-22T06:44:23.500Z	  ```
+2025-11-22T06:44:23.501Z	  
+2025-11-22T06:44:23.501Z	
+2025-11-22T06:44:23.501Z	
+2025-11-22T06:44:23.515Z	
+2025-11-22T06:44:23.515Z	Cloudflare collects anonymous telemetry about your usage of Wrangler. Learn more at https://github.com/cloudflare/workers-sdk/tree/main/packages/wrangler/telemetry.md
+2025-11-22T06:44:23.529Z	🪵  Logs were written to "/opt/buildhome/.config/.wrangler/logs/wrangler-2025-11-22_06-44-22_680.log"
+2025-11-22T06:44:23.660Z	Failed: error occurred while running deploy command
