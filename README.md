@@ -13,3 +13,13 @@ Planned components:
 
 This repo will evolve in phases.  
 **Current phase:** Phase 0 — Naming & Setup (domain, deployment pipeline, skeleton UI).
+
+## Deploying to Cloudflare Pages
+
+The frontend lives in `frontend/`. A root-level helper script installs the dependencies there and runs the build:
+
+- Build command: `npm run build`
+- Build output directory: `frontend/out`
+- (Optional) Root directory: repo root (no subdirectory needed)
+
+`next.config.ts` is set to `output: "export"`, so `next build` generates a static export in `frontend/out` that Pages can serve directly. In CI the `prebuild` script runs `npm --prefix frontend ci` to install dependencies before the build.

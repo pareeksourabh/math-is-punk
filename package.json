@@ -1,0 +1,12 @@
+{
+  "name": "math-is-punk",
+  "private": true,
+  "workspaces": ["frontend"],
+  "scripts": {
+    "prebuild": "npm --prefix frontend ci",
+    "build": "npm --prefix frontend run build",
+    "dev": "npm --prefix frontend run dev",
+    "lint": "npm --prefix frontend run lint",
+    "format": "npm --prefix frontend run format"
+  }
+}
