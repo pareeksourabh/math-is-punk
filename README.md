@@ -49,3 +49,5 @@ Core ideas for Phase 1:
 - [ ] **Task 1.4:** Add basic UI controls (sliders/toggles) that change parameters of the visual in real time.
 - [ ] **Task 1.5:** Polish the styling to match the "Math is Punk" vibe (dark theme, strong typography, subtle borders).
 - [ ] **Task 1.6:** Refactor the visual into a reusable `<PlaygroundExperiment>` component so new experiments can be added later.
+
+Live site: https://mathispunk.com
