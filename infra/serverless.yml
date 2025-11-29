@@ -1,0 +1,14 @@
+service: math-is-punk-backend
+
+provider:
+  name: aws
+  runtime: python3.11
+  region: ap-southeast-1
+
+functions:
+  generateDailyArt:
+    handler: backend/daily_art_lambda/handler.generate_daily_art
+    events:
+      - http:
+          path: daily-art/generate
+          method: get
