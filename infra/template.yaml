@@ -1,4 +1,4 @@
-AWSTemplateFormatVersion: '2010-09-09'
+AWSTemplateFormatVersion: '2010-09-09' # SAM template defining the backend Lambda, S3 storage, API, and daily schedule
 Transform: AWS::Serverless-2016-10-31
 Description: Math is Punk backend (daily art Lambda)
 

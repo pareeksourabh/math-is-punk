@@ -1,3 +1,6 @@
+/**
+ * Today page: shows the daily math-art drop using the date-based seed and S3-rendered SVG.
+ */
 "use client";
 
 import Link from "next/link";

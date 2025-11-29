@@ -1,3 +1,6 @@
+/**
+ * Renders a deterministic daily caption chosen from a fixed list using the date-based seed.
+ */
 "use client";
 
 import { useMemo } from "react";

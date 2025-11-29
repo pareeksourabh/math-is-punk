@@ -1,3 +1,6 @@
+/**
+ * Seed utilities: date-based seed string and deterministic PRNG.
+ */
 export function getTodaySeedString(): string {
   const now = new Date();
   const month = String(now.getUTCMonth() + 1).padStart(2, "0");

@@ -1,3 +1,6 @@
+/**
+ * Daily art URL helper: builds the S3 URL for a given seed/date.
+ */
 const DAILY_ART_BUCKET = "math-is-punk-daily-art-886511165479";
 const DAILY_ART_REGION = "ap-southeast-1";
 

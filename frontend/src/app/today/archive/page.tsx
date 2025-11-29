@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 
+// Placeholder archive list; Phase 3/4 will load real S3-backed entries.
 const entries = [
   { date: "2025-11-22", caption: "Numbers don’t lie. They riot.", seed: "2025-11-22" },
   { date: "2025-11-21", caption: "Today’s mood: irrational but continuous.", seed: "2025-11-21" },

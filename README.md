@@ -102,3 +102,52 @@ Live site: https://mathispunk.com
 Notes:
 - `infra/template.yaml` is the AWS SAM template entry point for the backend (Serverless).
 - `backend/daily_art_lambda/handler.py` holds the Lambda that generates deterministic SVG art for a given date and stores it in the S3 bucket created by `DailyArtBucket`. It now also runs daily via EventBridge (`rate(1 day)`) in addition to the manual API call.
+
+---
+
+## ✅ Phase 2 — Today in Mathematics (Complete)
+
+Phase 2 introduced a daily heartbeat into Math is Punk: a deterministic math-art artifact generated every day and served directly from S3.
+
+### What Phase 2 delivers
+
+- `/today`: a clean, editorial-style daily math drop page.
+- Deterministic daily seed (`YYYY-MM-DD`) used everywhere (frontend + backend).
+- Client-side SVG replaced with real generated art stored in S3.
+- Fully automated backend:
+  - AWS Lambda generates deterministic SVG art.
+  - Files saved to: `s3://math-is-punk-daily-art-<account-id>/daily-art/<date>.svg`
+  - EventBridge rule triggers Lambda *daily* (schedule: `rate(1 day)`).
+- `/today/archive`: placeholder archive for future historical browsing.
+
+### Backend Architecture
+
+- **AWS SAM** manages all infra:
+  - Lambda: `GenerateDailyArtFunction`
+  - S3 bucket: `DailyArtBucket`
+  - BucketPolicy for public object-read
+  - API endpoint: `/daily-art/generate` for manual triggering
+  - Daily EventBridge schedule
+- Lambda code in: `backend/daily_art_lambda/handler.py`
+- SAM template in: `infra/template.yaml`
+
+### Frontend Architecture
+
+- Next.js app using App Router + Tailwind.
+- `/today` computes today’s seed and directly loads:
+https://<bucket>.s3.ap-southeast-1.amazonaws.com/daily-art/<seed>.svg
+
+markdown
+Copy code
+- `DailyCaption` uses the same seed to pick a deterministic math-punk caption.
+
+### Phase 2 Outcome
+
+Math is Punk now has:
+
+- A living daily feed  
+- Real generative art  
+- True backend automation  
+- A fully independent end-to-end pipeline (Lambda → S3 → Frontend)
+
+Phase 2 is complete.

@@ -1,3 +1,6 @@
+"""
+AWS Lambda: Generate daily math-art SVG deterministically from a date seed and save to S3.
+"""
 import json
 import logging
 import os
